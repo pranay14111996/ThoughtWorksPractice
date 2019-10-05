@@ -1,5 +1,7 @@
 package com.thoughtworks.practice.utility;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,11 +14,7 @@ public class InterGalacticTransaltor {
 	private static Map<String,Double> metalsCreditValueMap = new HashMap<>();
 	
 	public static void main(String[] args) {
-		String filepath = ".\\InputText.txt";
-
-	       System.out.println("Working Directory = " +
-	              System.getProperty("user.dir"));
-	  
+		String filepath = ".\\src\\InputText.txt";
 		FileUtility.readInput(filepath);
 		
 		intergalacticToRomanMap = InterGalacticDataStore.getIntergalacticValuesasMap();
