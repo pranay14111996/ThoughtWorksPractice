@@ -12,7 +12,11 @@ public class InterGalacticTransaltor {
 	private static Map<String,Double> metalsCreditValueMap = new HashMap<>();
 	
 	public static void main(String[] args) {
-		String filepath = "D:\\SpringWorkspace_MySpaces\\ThoughtWorksPractice\\src\\InputText.txt";
+		String filepath = ".\\InputText.txt";
+
+	       System.out.println("Working Directory = " +
+	              System.getProperty("user.dir"));
+	  
 		FileUtility.readInput(filepath);
 		
 		intergalacticToRomanMap = InterGalacticDataStore.getIntergalacticValuesasMap();
